@@ -358,14 +358,13 @@ header {
 }
 
 .footer-info {
-    display: flex;
-    justify-content: space-around;
     padding: 10px 0;
 }
 
 .footer-info p {
     font-size: 13px;
     color: #696969;
+    text-align: center;
 }
 
 /*Mobile Footer*/

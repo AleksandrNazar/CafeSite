@@ -148,11 +148,6 @@
         justify-content: center;
     }
 
-    .footer-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .footer-info p {
         padding-bottom: 5px;
     }
