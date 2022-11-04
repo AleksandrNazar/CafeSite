@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+/*-------------------------------HEADER----------------------------------*/
+
+header {
+    background-color: #4A2B33;
+}
+
+.header-fixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(120px, auto);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li a, .mobile-nav-links li a {
+    font-size: 1rem;
+    color: #C67A88;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo a {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 2rem;  
+    font-weight: 700;
+    color: #D27487;
+    opacity: 1;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-icons a {
+    font-size: 1.5rem;
+    color: #C67A88;
+    padding: 10px;
+}
+
+.nav-button {
+    display: none;
+}
+
+.button-menu {
+    width: 35px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-menu span {
+    width: 100%;
+    height: 4px;
+    background-color: #C67A88;
+    border-radius: 3px;
+}
+
+/*Mobile Nav*/
+
+.mobile-header-nav {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background-color: #4A2B33;
+
+}
+
+.mobile-nav-links {
+    text-align: center;
+}
+
+.mobile-nav-links li {
+    padding: 28px;
+}
+
+
+
+/*-------------------------------MAIN----------------------------------*/
+
+/*Section Intro*/
+
+.intro {
+    background-color: #4A2B33;
+    padding-bottom: 35px;
+}
+
+.intro-content {
+    min-height: 650px;
+    background-image: url(../img/intro/intro-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Section About*/
+
+.about-content { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 870px;
+    text-align: center;
+    padding: 220px 0;
+}
+
+.about-text h2 {
+    font-size: 1rem;
+    padding: 10px;
+    color: #222;
+}
+
+.about-text p {
+    font-size: 2rem;
+    color: #222;
+}
+
+/*Section Menu*/
+
+.menu {
+    background-color: #E9E9E3;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    padding: 120px 0;
+}
+
+.menu-categories {
+    padding-right: 105px;
+}
+
+.menu-categories h1 {
+    font-size: 1rem;
+}
+
+.menu-categories p {
+    font-size: 2rem;
+    color: #6F6F64;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 198px;
+    margin-top: 60px;
+}
+
+.button {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #6F6F64;
+    padding: 18px 0;
+    border: 2px solid #6F6F64;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #6F6F64;
+    color: #fff;
+}
+
+.active {
+    color: #fff;
+    background-color: #6F6F64;
+}
+
+/*Section Timetable*/
+
+.timetable {
+    background-color: #AA9E54;
+}
+
+.info-table {
+    width: 100%;
+    padding: 105px 0 100px 0;
+}
+
+.info-table th {
+    padding: 15px 0;
+    color: #fff;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.info-table td {
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+}
+
+/*Section Gallery*/
+
+.gallery-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 40px;
+    grid-auto-rows: auto;
+    padding: 150px 0 120px 0;
+}
+
+.photo {
+    width: 100%;
+}
+
+.big-photo {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+/*Section Award*/
+
+.award {
+    background-color: #4A2B33;
+}
+
+.award-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 0;
+}
+
+.award-head {
+    width: 40%;
+}
+
+.award-head h3 {
+    color: #D27487;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.award-text {
+    width: 48%;
+    padding-right: 9%;
+}
+
+.award-text p {
+    font-size: 1rem;
+    color: #D27487;
+}
+
+/*-------------------------------FOOTER----------------------------------*/
+    
+.footer-content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0 20px 0;
+}
+
+.footer-first-links, .footer-second-links {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links li a {
+    font-size: 1rem;
+    color: #1F1F1F;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.footer-info p {
+    font-size: 13px;
+    color: #696969;
+}
+
+/*Mobile Footer*/
+
+.mobile-footer-nav {
+    display: none;
+}
+
+.footer-user-links, .footer-service-links {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-links-head {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 2px solid #6F6F64;;
+    box-shadow: 2px -2px 0 0 #E9E9E3;
+    font-size: 1rem;
+    color: #6F6F64;
+    background-color: #E9E9E3;
+}
+
+.mobile-footer-links li {
+    padding: 10px;
+}
+
+.mobile-footer-links li a {
+    font-size: 1rem;
+    color: #1F1F1F;
+}
